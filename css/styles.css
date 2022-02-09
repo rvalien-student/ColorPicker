@@ -43,6 +43,10 @@ body {
 	opacity: 0;
 }
 
+#rgbContainer input {
+	width: 4rem;
+}
+
 .colorValueContainer {
 	border: solid 1px black;
 	margin: 0 1.5rem 1rem 1.5rem;
