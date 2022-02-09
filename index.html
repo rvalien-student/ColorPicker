@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color Picker</title>
-  <link href="css/styles.css" rel="stylesheet">
-</head>
-<body>
-  <h1>Color Picker</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
 
-  <!-- JQuery Library -->
-	<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+    <div id="colorPickerBox">
+      <h2>Color Picker</h2>
+      <div id=colorSquare></div>
+      <div id="rgbContainer">
+        <p class=errorMessage>RGB entry must be between 0 & 255 inclusive.</p>
+        <div class="colorValueContainer">
+          <p>RGB</p>
+          <div class="colorValues">
+            <label for="redValue">R</label>
+            <input type="number" id="redValue" name="redValue" value=0 min=0 max=255>
+            <label for="greenValue">G</label>
+            <input type="number" id="greenValue" name="greenValue" value=0 min=0 max=255>
+            <label for="blueValue">B</label>
+            <input type="number" id="blueValue" name="blueValue" value=0 min=0 max=255>
+          </div>
+        </div>
+      </div>
+      <div id="bmhContainer">
+        <div class="colorValueContainer">
+          <p>&#961&#947&#946L</p>
+          <div class=colorValues id="bmhValues">
+            <span id=rho>0</span>, <span id=gamma>0</span>, <span id=beta>0</span>, <span id=luminance>0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="navContainer">
+      <nav>
+        <ul>
+          <li><a href="https://github.com/rvalien-student/ColorPicker">ColorPicker Repository</a></li>
+          <li><a href="https://www.pivotaltracker.com/projects/2553314">ColorPicker Project</a></li>
+        </ul>
+      </nav>
+    </div>
 
-  <!-- color conversion-->
-  <script src="js/hello.js"></script>
+    <!-- JQuery Library -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
 
-</body>
+    <!-- color conversion-->
+    <script src="js/colorPicker.js"></script>
+
+  </body>
 </html>

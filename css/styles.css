@@ -11,3 +11,55 @@
 }
 
 /* end resets */
+
+body {
+	background-color: lightgray;
+}
+
+#colorPickerBox {
+	background-color: rgb(184, 171, 171);
+	border: solid 1px green;
+	margin: 2rem;
+	width: 20rem;
+}
+
+#colorPickerBox h2 {
+	margin: 1rem 1.5rem 0 1.5rem;
+	padding-left: 1rem;
+	text-align: left;
+}
+
+#colorSquare {
+  border: solid 3px black;
+	margin: .25rem 1.5rem;
+  height: 10rem;
+}
+
+#rgbContainer .errorMessage {
+	color: red;
+	font-size: .75rem;
+	font-weight: bold;
+	margin: 0 1.5rem .25rem 1.5rem;
+	opacity: 0;
+}
+
+.colorValueContainer {
+	border: solid 1px black;
+	margin: 0 1.5rem 1rem 1.5rem;
+}
+
+.colorValueContainer p {
+	margin: .25rem;
+}
+
+.colorValues {
+	margin: .25rem;
+}
+
+#navContainer {
+	margin: 2rem;
+}
+
+#navContainer a {
+	font-size: 1.2rem;
+}
