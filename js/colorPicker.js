@@ -35,6 +35,7 @@ $(function() {
   $("#redValue").trigger("change");
 
   console.log(getRedirectURL('index.html'));
+  console.log(window.location.hostname);
 });
 
 // RGB change, update app
