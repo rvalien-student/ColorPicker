@@ -33,6 +33,8 @@ $(function() {
 
   // Trigger event to update app
   $("#redValue").trigger("change");
+
+  console.log(getRedirectURL('index.html'));
 });
 
 // RGB change, update app
@@ -103,3 +105,11 @@ function updateBMHValues() {
 function roundFloat(aFloat, numDecimalPlaces) {
   return Math.round(aFloat * (10 * numDecimalPlaces)) / (10 * numDecimalPlaces);
 }
+
+
+// Build full path (absolute) URL string
+getRedirectURL = (targetStr) => {
+  var url = (window.location.href.split('/'));
+  url[url.length - 1] = targetStr;
+  return url.join('/');
+};
